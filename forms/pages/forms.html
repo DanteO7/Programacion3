@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Inicio</h1>
+    </header>
+    <main>
+      <h1>Hola soy el form</h1>
+      <span>Ir al </span><a href="../index.html">inicio</a>
+      <form action="/enviar" method="POST">
+        <h2>Formulario de Contacto</h2>
+
+        <section>
+          <h4>Tus datos Personales</h4>
+
+          <fieldset>
+            <legend>Datos</legend>
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div>
+              <label for="phone">Telefono:</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </fieldset>
+
+          <div>
+            <input type="range" />
+          </div>
+
+          <div>
+            <label for="genero">Genero:</label>
+            <select name="genero" id="genero">
+              <option value="">Seleccione un Genero</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="">Intereses:</label>
+
+            <label for="deporte">Deporte:</label>
+            <input type="checkbox" name="intereses" />
+
+            <label for="musica">Musica:</label>
+            <input type="checkbox" name="intereses" />
+          </div>
+
+          <div>
+            <input type="radio" id="opcion1" name="eleccion" />
+            <label for="opcion1">Opcion1</label>
+
+            <input type="radio" id="opcion2" name="eleccion" />
+            <label for="opcion2">Opcion2</label>
+
+            <input type="radio" id="opcion3" name="elecciones" />
+            <label for="opcion3">Opcion3</label>
+          </div>
+
+          <div>
+            <label for="file">Seleccione un Archivo</label>
+            <input type="file" name="file" id="file" />
+          </div>
+
+          <div>
+            <h5>Dejanos un comentario</h5>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </section>
+
+        <input type="submit" />
+        <input type="reset" / >
+      </form>
+    </main>
+    <footer>
+      <h6>&copy; Todos los derechos reservados</h6>
+      <section>
+        <ul>
+          <h5>Redes Sociales</h5>
+          <li><a href="#ig">Instagram</a></li>
+          <li><a href="#fb">Facebook</a></li>
+          <li><a href="#tw">Twitter</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
