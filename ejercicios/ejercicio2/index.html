@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda Ficticia</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Productos</h2>
+            <article>
+                <fieldset>
+                    <img src="./celular.jpg" alt="celular Samsung A05" width="150px">
+                    <h3>Producto1</h3>
+                    <p>descripcion del producto1</p>
+                    <h4>$2000</h4>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <img src="./celular.jpg" alt="celular Samsung A05" width="150px">
+                    <h3>Producto2</h3>
+                    <p>descripcion del producto2</p>
+                    <h4>$2000</h4>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <img src="./celular.jpg" alt="celular Samsung A05" width="150px">
+                    <h3>Producto3</h3>
+                    <p>descripcion del producto3</p>
+                    <h4>$2000</h4>
+                </fieldset>
+            </article>
+        </section>
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="/enviar" method="POST">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+                <div>
+                    <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
