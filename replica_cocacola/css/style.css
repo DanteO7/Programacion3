@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+}
+
+.banner {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 12px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.banner-item {
+  width: 500px;
+  min-width: 450px;
+  height: 300px;
+  border-radius: 8px;
+  scroll-snap-align: center;
+}
+
+.section-image {
+  width: 350px;
+}
+
+.article-image {
+  width: 350px;
+  height: 250px;
+}
+
+.image-brand {
+  width: 200px;
+}
+
+.social-media-image {
+  width: 15px;
+}
+
+main {
+  background-color: #ddd;
+}
+
+.container-header {
+  padding: 10px;
+}
+
+.navegation-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacion-lista {
+  display: block;
+  list-style-type: none;
+}
+
+.marcas {
+  display: inline-block;
+}
+
+.descubri {
+  display: inline-block;
+}
+
+.impacto {
+  display: inline-block;
+}
+
+.comprar {
+  display: inline-block;
+}
+
+.login {
+  margin-left: 50%;
+}
