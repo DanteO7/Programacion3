@@ -1,0 +1,126 @@
+a{
+    margin: 20px;
+    color: yellow;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.subrayado{
+    position: relative;
+}
+
+.subrayado::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+
+    height: 2px;
+    width: 100%;
+    background-color:#4cdf50;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.subrayado:hover::before{
+    transform: scaleX(1);
+}
+
+/* a:hover{
+    color:aquamarine;
+    text-decoration: underline;
+} */
+
+input{
+    padding: 4px;
+}
+
+input:focus{
+    font-weight: bold;
+    outline: none;
+    border: 2px solid #0000ff;
+}
+
+/* ul{
+    margin:20px;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+li:first-child{
+    color:greenyellow;
+    font-weight: bold;
+}
+
+li:nth-child(3){
+    color: darksalmon;
+}
+
+li:last-child{
+    color:lightseagreen
+}
+
+li:nth-child(2n+1){
+    background-color:darkorchid;
+}
+
+li:nth-child(2n){
+    background-color:peru
+} */
+
+h1{
+    margin-bottom: 20px;
+}
+/*las pseudo clases representan estados del elemento*/
+/* los pseudo elementos representan partes del elemento
+ las pseudoclases tienen que representar un elemento válido, 
+ un pseudo elemento no es válido
+*/
+p::before{
+    content: "🖐";
+}
+
+/* a::after{
+    content: "🔗";
+} */
+
+button{
+    all:unset;
+    padding: 3px;
+    border-radius: 6px;
+    border: 1px solid #666;
+    box-shadow: 1px 1px 3px black;
+    background-color: #565656;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #444;
+}
+
+button::after{
+    content: attr(data-tooltip);
+    background-color: black;
+    padding: 2px;
+    border-radius: 5px 5px 5px 0px;
+    position: absolute;
+    transform: translateY(-120%);
+    display: none;
+}
+
+button:hover::after{
+    display: inline-block;
+}
+
+.lista-numerada li{
+    counter-increment: tarea;
+    padding-left: 20px;
+    position: relative;
+    list-style: none;
+}
+
+.lista-numerada li::before{
+    content: counter(tarea) ". ";
+    position:absolute;
+    left:0
+}
