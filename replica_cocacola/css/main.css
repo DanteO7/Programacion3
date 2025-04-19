@@ -1,0 +1,75 @@
+main {
+  background-color: #eee;
+}
+
+.banner-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  overflow-x: auto;
+  width: 1000px;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.banner-item {
+  width: 500px;
+  min-width: 720px;
+  height: 405px;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  background-size: cover;
+  color: #ededed;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 200px;
+}
+
+.banner-content {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-content h3 {
+  font-size: 30px;
+}
+
+.banner-content p {
+  font-size: 12px;
+}
+
+.banner-content a {
+  color: black;
+  background-color: #ededed;
+  padding: 5px 70px;
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 100px;
+  text-align: center;
+}
+
+.section-image {
+  width: 350px;
+}
+
+.article-image {
+  width: 350px;
+  height: 250px;
+}
+
+.image-brand {
+  width: 200px;
+}
+
+.social-media-image {
+  width: 15px;
+}
