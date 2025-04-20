@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link
       rel="shortcut icon"
       href="https://cdn-icons-png.flaticon.com/128/16183/16183588.png"
@@ -104,9 +105,9 @@
           </div>
         </nav>
       </div>
-      <section>
-        <h2>¿Qué hay de nuevo</h2>
-        <div>
+      <section class="section-container">
+        <h2>¿Qué hay de nuevo?</h2>
+        <div class="article-container">
           <a href="">
             <article>
               <img
@@ -114,12 +115,14 @@
                 alt=""
                 class="section-image"
               />
-              <h3>Vibrá con cada beat en el Lollapalooza Argentina</h3>
-              <p>
-                Sumergite en la música, el arte y la energía del festival con
-                Coke Studio.
-              </p>
-              <a href="">Descubri como</a>
+              <div class="article-content">
+                <h3>Vibrá con cada beat en el Lollapalooza Argentina</h3>
+                <p>
+                  Sumergite en la música, el arte y la energía del festival con
+                  Coke Studio.
+                </p>
+                <span>Descubri como</span>
+              </div>
             </article>
           </a>
           <a href="">
@@ -129,33 +132,41 @@
                 alt=""
                 class="section-image"
               />
-              <h3>¡Un nuevo sabor llegó!</h3>
-              <p>
-                Animate a probar la nueva Fanta Pomelo. Un sabor diferente con
-                la misma diversión de siempre.
-              </p>
-              <a href="">Conocer más</a>
+              <div class="article-content">
+                <h3>¡Un nuevo sabor llegó!</h3>
+                <p>
+                  Animate a probar la nueva Fanta Pomelo. Un sabor diferente con
+                  la misma diversión de siempre.
+                </p>
+                <span>Conocer más</span>
+              </div>
             </article>
           </a>
         </div>
       </section>
-      <section>
+      <section class="section-container">
         <h2>Experiencias</h2>
-        <article>
-          <h3>Subí el volumen</h3>
-          <p>
-            Descubrí colaboraciones únicas que trascienden todos los rincones
-            del mundo, en un solo lugar.
-          </p>
-          <button>Escuchar</button>
-        </article>
-        <article>
-          <img src="./images/image-article.webp" alt="" class="article-image" />
-        </article>
+        <div class="exp-container">
+          <article class="article-exp">
+            <h3>Subí el volumen</h3>
+            <p>
+              Descubrí colaboraciones únicas que trascienden todos los rincones
+              del mundo, en un solo lugar.
+            </p>
+            <a href="#">Escuchar</a>
+          </article>
+          <article class="exp-image">
+            <img
+              src="./images/image-article.webp"
+              alt=""
+              class="article-image"
+            />
+          </article>
+        </div>
       </section>
-      <section>
+      <section class="section-container">
         <h2>Nuestras Marcas</h2>
-        <div>
+        <div class="brands-container">
           <a href="">
             <img src="./images/Coca-Cola.svg" alt="" class="image-brand" />
           </a>
@@ -166,7 +177,7 @@
             <img src="./images/Sprite.webp" alt="" class="image-brand" />
           </a>
         </div>
-        <button>Ver Más</button>
+        <a href="#" class="button">Ver Más</a>
       </section>
     </main>
     <footer>

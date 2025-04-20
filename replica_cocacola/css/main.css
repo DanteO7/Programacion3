@@ -44,7 +44,7 @@ main {
 }
 
 .banner-content p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .banner-content a {
@@ -57,19 +57,140 @@ main {
   text-align: center;
 }
 
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.article-container {
+  display: flex;
+  gap: 20px;
+  width: 720;
+}
+
+.article-container article {
+  background-color: white;
+  border-radius: 13px;
+  width: 350px;
+  height: 500px;
+}
+
+/* Debería hacer que las imagenes estén como background-image de un div asi se adaptan a la pantalla cuando se reduce de tamaño*/
 .section-image {
   width: 350px;
+  border-radius: 13px 13px 0 0;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+
+  margin: 20px;
+  height: 110px;
+}
+
+.article-content p {
+  font-size: 13px;
+}
+
+.article-content span {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: underline;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.article-container a:hover span {
+  color: #555;
+}
+
+.exp-container {
+  display: flex;
+  position: relative;
+}
+
+.article-exp {
+  background-color: white;
+  width: 350px;
+  height: 370px;
+  padding: 40px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: relative;
+}
+
+.exp-image {
+  border-radius: 20px;
+}
+
+.article-exp a {
+  color: black;
+  border: 1.5px solid black;
+  padding: 3px 70px;
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.article-exp a:hover {
+  background-color: #ddd;
 }
 
 .article-image {
-  width: 350px;
-  height: 250px;
+  width: 430px;
+  height: 307px;
+  border-radius: 20px;
+}
+
+.brands-container {
+  display: flex;
+  gap: 20px;
+}
+
+.brands-container a {
+  background-color: white;
+  border-radius: 15px;
+  width: 150px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.brands-container a:hover {
+  transform: scale(1.07);
+}
+
+.button {
+  color: black;
+  border: 1.5px solid black;
+  padding: 3px 70px;
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #ddd;
 }
 
 .image-brand {
-  width: 200px;
-}
-
-.social-media-image {
-  width: 15px;
+  width: 150px;
+  height: 150px;
 }

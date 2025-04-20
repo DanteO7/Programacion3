@@ -1,0 +1,11 @@
+footer {
+  background-color: black;
+  color: #ededed;
+}
+
+.social-media-image {
+  background-color: #ededed;
+  border-radius: 50%;
+  padding: 1px;
+  width: 15px;
+}
