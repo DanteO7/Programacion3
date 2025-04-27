@@ -6,6 +6,8 @@
   --background: #121212;
   --surface: #1e1e1e;
   --surface-secondary: #2d2d2d;
+  --surface-tertiary: #444;
+  --border: #333;
   --gradient-background: linear-gradient(
     to right,
     var(--primary-color),
@@ -14,7 +16,9 @@
 
   --title-font-size: 20px;
   --normal-font: 13px;
-  --font-destacada: ;
+  --font-destacada: 11px;
+  --text-color: #ededed;
+  --secondary-text-color: #a0a0a0;
 }
 
 * {
@@ -24,14 +28,28 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: var(--surface);
+}
+
+main {
+  padding: 20px;
+}
+
 a {
   all: unset;
 }
 
+h2 {
+  color: var(--text-color);
+  font-size: var(--title-font-size);
+}
+
 header {
-  background-color: var(--surface);
+  background-color: var(--surface-secondary);
   width: 100vw;
   padding: 10px 15px;
+  border: 1px solid var(--border);
 
   display: flex;
   flex-direction: row;
@@ -47,11 +65,13 @@ header {
   width: 70px;
   height: 50px;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .menu {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -60,7 +80,7 @@ header {
 }
 
 .menu-line {
-  background-color: white;
+  background-color: var(--text-color);
   width: 100%;
   height: 3px;
   border-radius: 2px;
@@ -72,7 +92,7 @@ button {
 
 .primary-button {
   background: var(--gradient-background);
-  color: #ededed;
+  color: var(--text-color);
   border-radius: 5px;
   padding: 8px 17px;
   cursor: pointer;
@@ -91,6 +111,27 @@ button {
 
 .tertiary-button {
   text-decoration: underline;
-  color: #ededed;
+  color: var(--text-color);
   cursor: pointer;
+  font-size: var(--normal-font);
+}
+
+.color-section {
+  background: var(--gradient-background);
+  color: var(--text-color);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 40px;
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-section p {
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
 }

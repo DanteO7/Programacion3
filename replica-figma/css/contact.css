@@ -1,0 +1,5 @@
+@import url("./globals.css");
+
+.contact-form {
+  background-color: var(--surface-secondary);
+}
