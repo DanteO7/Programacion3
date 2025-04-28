@@ -28,30 +28,42 @@
             type="text"
             name="name"
             class="input-field"
-            placeholder="Nombre Completo"
-          />
-        </div>
-        <div class="form-field">
-          <input
-            type="text"
-            name="name"
-            class="input-field"
             placeholder="Nombre completo"
           />
         </div>
         <div class="form-field">
-          <select name="service">
-            <option value="">Selecciona un servicio</option>
-            <option value="marketing-digital">Marketing Digital</option>
-            <option value="diseño-grafico">Diseño Gráfico</option>
-            <option value="desarrollo-web">Desarrollo Web</option>
+          <input
+            type="email"
+            name="email"
+            class="input-field"
+            placeholder="Correo electrónico"
+          />
+        </div>
+        <div class="form-field">
+          <select name="service" class="input-field">
+            <option value="" class="form-field">Selecciona un servicio</option>
+            <option value="marketing-digital" class="form-field">
+              Marketing Digital
+            </option>
+            <option value="diseño-grafico" class="form-field">
+              Diseño Gráfico
+            </option>
+            <option value="desarrollo-web" class="form-field">
+              Desarrollo Web
+            </option>
           </select>
         </div>
-        <textarea name="message">Tu mensaje</textarea>
-        <button class="primary-button"></button>
+        <div class="form-field">
+          <textarea
+            name="message"
+            placeholder="Tu mensaje"
+            class="input-field"
+          ></textarea>
+        </div>
+        <button class="primary-button">Enviar mensaje</button>
       </form>
       <section class="extra-info">
-        <h2>Informacion adicional</h2>
+        <h3>Informacion adicional</h3>
         <p>Email: contacto@serviciosdigitales.com</p>
         <p>Teléfono: +1 234 567 890</p>
         <p>Dirección: Calle Principal 123</p>

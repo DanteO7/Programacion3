@@ -36,7 +36,11 @@ main {
   padding: 20px;
 }
 
-a {
+a,
+input,
+textarea,
+select,
+option {
   all: unset;
 }
 
@@ -97,6 +101,8 @@ button {
   padding: 8px 17px;
   cursor: pointer;
   font-size: var(--normal-font);
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .secondary-button {
