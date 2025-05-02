@@ -1,5 +1,20 @@
 @import url("./globals.css");
 
+.hero-image {
+  background-color: var(--surface-secondary);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 50px 0;
+  font-size: var(--normal-font);
+  width: 40%;
+  height: 200px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-contact h2 {
   text-align: center;
   font-size: var(--title-font-size);
@@ -8,6 +23,7 @@
 .service-container {
   display: flex;
   flex-direction: column;
+  margin: 10px 0 20px 0;
 }
 
 .service-container h2 {
@@ -38,7 +54,7 @@
 
 .company-container {
   background-color: var(--surface-secondary);
-  padding: 15px 30px;
+  padding: 15px 15px;
   border-radius: 10px;
   border: 1px solid var(--border);
   margin-top: 15px;
@@ -52,6 +68,40 @@
 .company {
   background-color: var(--surface-tertiary);
   border-radius: 5px;
-  min-width: 65px;
+  min-width: 60px;
   min-height: 30px;
+}
+
+@media (width > 375px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 950px;
+    gap: 20px;
+    margin: auto;
+  }
+
+  .primary-color-section {
+    width: 60%;
+  }
+
+  .hero-image {
+    display: flex;
+    width: 40%;
+  }
+
+  .main-content {
+    margin: auto;
+    max-width: 900px;
+  }
+
+  .service-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .company-container {
+    justify-content: space-around;
+  }
 }

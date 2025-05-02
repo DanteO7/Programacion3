@@ -8,69 +8,89 @@
   </head>
   <body>
     <header>
-      <div class="logo"></div>
-      <button class="menu">
-        <span class="menu-line"></span><span class="menu-line"></span
-        ><span class="menu-line"></span>
-      </button>
+      <div class="header-content">
+        <div class="logo"></div>
+        <ul class="nav-list">
+          <li><a href="./../index.html">Inicio</a></li>
+          <li><a href="./marketing.html">Marketing</a></li>
+          <li><a href="">Diseño</a></li>
+          <li><a href="./web-development.html">Web</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+        <button class="menu">
+          <span class="menu-line"></span><span class="menu-line"></span
+          ><span class="menu-line"></span>
+          <ul class="sub-list">
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./marketing.html">Marketing</a></li>
+            <li><a href="./design.html">Diseño</a></li>
+            <li><a href="./web-development.html">Web</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </ul>
+        </button>
+      </div>
     </header>
     <main>
-      <h2>Contacto</h2>
-      <section class="text-section">
-        <p>
-          Estamos listos para ayudarte. Completa el formulario y nos pondremos
-          en contacto contigo lo antes posible.
-        </p>
-      </section>
-      <form action="#" method="POST" class="contact-form">
-        <div class="form-field">
-          <input
-            type="text"
-            name="name"
-            class="input-field"
-            placeholder="Nombre completo"
-          />
-        </div>
-        <div class="form-field">
-          <input
-            type="email"
-            name="email"
-            class="input-field"
-            placeholder="Correo electrónico"
-          />
-        </div>
-        <div class="form-field">
-          <select name="service" class="input-field">
-            <option value="" class="form-field">Selecciona un servicio</option>
-            <option value="marketing-digital" class="form-field">
-              Marketing Digital
-            </option>
-            <option value="diseño-grafico" class="form-field">
-              Diseño Gráfico
-            </option>
-            <option value="desarrollo-web" class="form-field">
-              Desarrollo Web
-            </option>
-          </select>
-        </div>
-        <div class="form-field">
-          <textarea
-            name="message"
-            placeholder="Tu mensaje"
-            class="input-field"
-          ></textarea>
-        </div>
-        <button class="primary-button">Enviar mensaje</button>
-      </form>
-      <section class="extra-info">
-        <h3>Informacion adicional</h3>
-        <p>Email: contacto@serviciosdigitales.com</p>
-        <p>Teléfono: +1 234 567 890</p>
-        <p>Dirección: Calle Principal 123</p>
-      </section>
-      <section class="map">
-        <p>Mapa (placeholder)</p>
-      </section>
+      <div class="main-content">
+        <h2>Contacto</h2>
+        <section class="text-section">
+          <p>
+            Estamos listos para ayudarte. Completa el formulario y nos pondremos
+            en contacto contigo lo antes posible.
+          </p>
+        </section>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-field">
+            <input
+              type="text"
+              name="name"
+              class="input-field"
+              placeholder="Nombre completo"
+            />
+          </div>
+          <div class="form-field">
+            <input
+              type="email"
+              name="email"
+              class="input-field"
+              placeholder="Correo electrónico"
+            />
+          </div>
+          <div class="form-field">
+            <select name="service" class="input-field">
+              <option value="" class="form-field">
+                Selecciona un servicio
+              </option>
+              <option value="marketing-digital" class="form-field">
+                Marketing Digital
+              </option>
+              <option value="diseño-grafico" class="form-field">
+                Diseño Gráfico
+              </option>
+              <option value="desarrollo-web" class="form-field">
+                Desarrollo Web
+              </option>
+            </select>
+          </div>
+          <div class="form-field">
+            <textarea
+              name="message"
+              placeholder="Tu mensaje"
+              class="input-field"
+            ></textarea>
+          </div>
+          <button class="primary-button">Enviar mensaje</button>
+        </form>
+        <section class="extra-info">
+          <h3>Informacion adicional</h3>
+          <p>Email: contacto@serviciosdigitales.com</p>
+          <p>Teléfono: +1 234 567 890</p>
+          <p>Dirección: Calle Principal 123</p>
+        </section>
+        <section class="map">
+          <p>Mapa (placeholder)</p>
+        </section>
+      </div>
     </main>
   </body>
 </html>
