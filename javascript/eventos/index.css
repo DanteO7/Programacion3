@@ -1,0 +1,23 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  display: block;
+  margin-top: 20px;
+}
+
+.rojo {
+  color: red;
+}
+
+.verde {
+  color: green;
+}
+
+#product-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
