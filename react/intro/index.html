@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script type="text/babel">
+      const divRoot = document.getElementById("root");
+
+      const root = ReactDOM.createRoot(divRoot);
+
+      // renderizar / pintar / construir /  montar / hidratar
+      // re-renderizar / actualizar / re-hidratar: cargar lo que ya estaba cargado
+
+      // incrustar - Que? -> Expresiones -  Donde? -> JSX
+      // sintaxis -> {aca dentro va la expresion}
+
+      //   const nombre = "Juan";
+
+      //   const edad = 19;
+
+      //   const body = (
+      //     // se puede poner vacío (<> </>)
+      //     <React.Fragment>
+      //       <h1>Hola Mundo {nombre}</h1>
+      //       <h2>Subtitulo</h2>
+      //       <h3> {edad >= 18 ? "podes pasar" : "No podes pasar"}</h3>
+      //     </React.Fragment> // se puede poner vacío (<> </>)
+      //   );
+
+      //   const app = (
+      //     <>
+      //       👇 expresion JSX
+      //       {body} // incrustar
+      //       {body}
+      //     </>
+      //   );
+
+      //   const nombres = ["a", "b", "c"];
+
+      //   const app = (
+      //     <ul>
+      //       {nombres.map((n) => (
+      //         <li>{n}</li>
+      //       ))}
+      //     </ul>
+      //   );
+
+      const body = (
+        <React.Fragment>
+          <fieldset>
+            <legend>Gatitos</legend>
+            <h1>Bienvenido</h1>
+            <p>Como estas?</p>
+            <img
+              src="https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-0.jpg"
+              alt="gatito"
+              width="100px"
+            ></img>
+          </fieldset>
+          <button>Like</button>
+        </React.Fragment>
+      );
+
+      const app = (
+        <>
+          {body} {body} {body}
+        </>
+      );
+
+      root.render(app);
+    </script>
+  </body>
+</html>
