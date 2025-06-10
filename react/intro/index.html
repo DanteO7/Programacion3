@@ -23,6 +23,7 @@
 
       const root = ReactDOM.createRoot(divRoot);
 
+      // manera de expresar html (JSX)
       // renderizar / pintar / construir /  montar / hidratar
       // re-renderizar / actualizar / re-hidratar: cargar lo que ya estaba cargado
 
@@ -60,29 +61,61 @@
       //     </ul>
       //   );
 
-      const body = (
-        <React.Fragment>
-          <fieldset>
-            <legend>Gatitos</legend>
-            <h1>Bienvenido</h1>
-            <p>Como estas?</p>
-            <img
-              src="https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-0.jpg"
-              alt="gatito"
-              width="100px"
-            ></img>
-          </fieldset>
-          <button>Like</button>
-        </React.Fragment>
-      );
+      // const body = (
+      //   <React.Fragment>
+      //     <fieldset>
+      //       <legend>Gatitos</legend>
+      //       <h1>Bienvenido</h1>
+      //       <p>Como estas?</p>
+      //       <img
+      //         src="https://www.mundogatos.com/Uploads/mundogatos.com/ImagenesGrandes/fotos-de-gatitos-0.jpg"
+      //         alt="gatito"
+      //         width="100px"
+      //       />
+      //     </fieldset>
+      //     <button>Like</button>
+      //   </React.Fragment>
+      // );
 
-      const app = (
+      // const app = (
+      //   <>
+      //     {body} {body} {body}
+      //   </>
+      // );
+
+      // Adaptabilidad
+      // componentes de clases
+      // componentes funcionales
+      // debe empezar con mayúscula
+
+      // props -> validación de propiedades -> atributo
+
+      const Bienvenida = ({ nombre, children }) => (
         <>
-          {body} {body} {body}
+          <hr />
+          <h1>Hola, Buenas {nombre}!</h1>
+          {children}
+          <hr />
         </>
       );
 
-      root.render(app);
+      const nombres = ["Pepe", "Maria", "Juan"];
+
+      function App() {
+        return (
+          <>
+            {nombres.map((nombre, i) => {
+              return (
+                <Bienvenida key={nombre + i} nombre={nombre}>
+                  <i>Soy un hijo</i> // puede ser cualquier cosa
+                </Bienvenida>
+              );
+            })}
+          </>
+        );
+      }
+
+      root.render(<App />);
     </script>
   </body>
 </html>
