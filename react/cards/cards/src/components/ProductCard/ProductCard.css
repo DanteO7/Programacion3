@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ededed;
+}
+
+button {
+  all: unset;
+}
+
+.product-card {
+  width: 300px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  margin: 40px;
+  box-shadow: 8px 8px 20px black;
+
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 299px;
+  border-radius: 10px 10px 0 0;
+}
+
+.text-card {
+  padding: 10px 20px 20px 20px;
+}
+
+.text-card p {
+  margin-bottom: 40px;
+}
+
+.text-card span {
+  font-size: 1.3rem;
+}
+
+.primary-button {
+  border: 1px solid #555;
+  border-radius: 10px;
+  background-color: #444;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+
+  transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+  background-color: #222;
+  border: 1px solid black;
+  color: black;
+}
+
+/* SPA (single page application) es que una página no recargue */
+/* virtual-DOM es una copia del DOM, cuando haces un cambio revisa el virtual-DOM el cambio y lo trae al DOM*/
+
+/* indentidad, comportamiento, estado */
+
+/* cuando se llama un hook se actualiza toda la app */
