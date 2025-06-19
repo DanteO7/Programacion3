@@ -1,0 +1,12 @@
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.button-container button {
+  padding: 4px;
+  border-radius: 7px;
+  border: 2px solid black;
+}
